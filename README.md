@@ -66,6 +66,7 @@
 *El juego puede crear una sensación de tensión viendo muchos insectos en la pantalla, pero igual puede causar satisfacción al aplastarlos por las veces que han molestado en la vida real.*
 
 **f) ¿Qué hace que el juego sea "divertido"? Algunos jugadores pueden disfrutar de los gráficos, la música, la historia o las emociones evocadas por el juego**
+
 *La competitividad de ser el jugador con mayor puntuación, sumando un gameplay sencillo con música tranquila.*
 
 
