@@ -1,4 +1,8 @@
+
 # Bug-Slayer
+
+# Diagrama de Clase:
+![Diagrama de Clases](https://user-images.githubusercontent.com/89099146/143518735-1a79244c-d0d6-4591-9592-44d7b71a8841.png)
 
 ## 1. Visión general 
 **a) Escriba un párrafo corto (3–6 oraciones) que explique su juego. (Esto a veces se llama “la plática de elevador” o elevator pitch: un breve resumen utilizado para describir rápida y simplemente una idea o producto durante un viaje en elevador de 30 segundos).**
