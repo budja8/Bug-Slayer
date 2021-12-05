@@ -1,8 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class RecordScreen extends World
+public class Game extends World
 {
-    public RecordScreen()
+    public Game()
     {    
         super(900, 600, 1); 
     }

@@ -16,15 +16,20 @@ public class MainScreen extends World
             music.play();
         }
         
+        checkKeyDown();
+        
+    }
+    
+    public void checkKeyDown(){
         if(Greenfoot.isKeyDown("r")){
             music.stop();
             Greenfoot.setWorld(new RecordScreen());
         }else if(Greenfoot.isKeyDown("h")){
             music.stop();
-            Greenfoot.setWorld(new Help());
+            Greenfoot.setWorld(new HelpScreen());
         }else if(Greenfoot.isKeyDown("enter")){
             music.stop();
-            Greenfoot.setWorld(new Play());
+            Greenfoot.setWorld(new Game());
         }else if(Greenfoot.isKeyDown("s")){
             music.stop();
             System.exit(0);
