@@ -1,9 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class TimeOut extends World
+public class TimeOutScreen extends World
 {
 
-    public TimeOut()
+    public TimeOutScreen()
     {    
         super(900, 600, 1); 
     }

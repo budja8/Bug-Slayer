@@ -2,4 +2,10 @@
 comment0.target=RecordScreen
 comment1.params=
 comment1.target=RecordScreen()
-numComments=2
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ checkRecords()
+comment4.params=
+comment4.target=void\ showRecords()
+numComments=5
