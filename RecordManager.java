@@ -1,14 +1,23 @@
 import java.io.*;
 import java.util.LinkedList;
 import java.util.List;
+import javax.swing.JOptionPane;
 
 public class RecordManager {
     private final int numMaxRecords;
     private final String nameFile;
-
+    private static RecordManager recordManager;
+    
     public RecordManager(int maxRecords, String name) {
         this.numMaxRecords = maxRecords;
         this.nameFile = name;
+    }
+    
+    public static RecordManager getRecordManager(){
+        if(recordManager == null){
+            recordManager = new RecordManager(10, "records.rcd");
+        }
+        return recordManager;
     }
 
     public void save(Record record) {
@@ -40,20 +49,25 @@ public class RecordManager {
     }
 
     public List<Record> getRecords() {
+        File f = new File("records.rcd");
         List<Record> records = new LinkedList<>();
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(nameFile))) {
-            String currentLine;
+        if (f.exists()) {
+            try (BufferedReader reader = new BufferedReader(new FileReader(nameFile))) {
+                String currentLine;
 
-            while ((currentLine = reader.readLine()) != null) {
-                String[] items = currentLine.split(",");
+                while ((currentLine = reader.readLine()) != null) {
+                    String[] items = currentLine.split(",");
 
-                records.add(new Record(items[0], Integer.parseInt(items[1])));
+                    records.add(new Record(items[0], Integer.parseInt(items[1])));
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-        } catch (IOException e) {
-            e.printStackTrace();
+        } else {
+            JOptionPane.showMessageDialog(null, "Aún no hay records guardados:(");
         }
-
+        
         return records;
     }
 }

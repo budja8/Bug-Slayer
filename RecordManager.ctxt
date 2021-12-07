@@ -2,8 +2,10 @@
 comment0.target=RecordManager
 comment1.params=maxRecords\ name
 comment1.target=RecordManager(int,\ java.lang.String)
-comment2.params=record
-comment2.target=void\ save(Record)
-comment3.params=
-comment3.target=java.util.List\ getRecords()
-numComments=4
+comment2.params=
+comment2.target=RecordManager\ getRecordManager()
+comment3.params=record
+comment3.target=void\ save(Record)
+comment4.params=
+comment4.target=java.util.List\ getRecords()
+numComments=5
