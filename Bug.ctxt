@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Bug
+comment1.params=pointsGeneric\ speedGeneric\ mouseDistanceGeneric
+comment1.target=void\ act(int,\ int,\ int)
+comment2.params=speed
+comment2.target=void\ huir(int)
+comment3.params=speed
+comment3.target=void\ alCentro(int)
+comment4.params=scr
+comment4.target=void\ morir(int)
+comment5.params=mouseDistance
+comment5.target=boolean\ mouseCerca(int)
+numComments=6
